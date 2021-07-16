@@ -34,36 +34,52 @@ class BoardDetailPage extends StatelessWidget {
                 ],
               ),
               child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.center,
+              //    crossAxisAlignment: CrossAxisAlignment.center,
+              //    mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(
-                      height: 40.0,
+                      height: 10.0,
+                    ),
+
+                    Row(
+
+                      children: [
+                        SizedBox(
+                          width: 30.0,
+                        ),
+                        Icon(Icons.circle),
+                        SizedBox(
+                          width: 20.0,
+                        ),
+                        Text(questions.title, style: body1Style(color: onSurface[900])),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 10.0,
                     ),
                     new Container(
-                      width: 360,
+                      width: 400,
                       height: 120,
                       child:Image.asset('asset/cat.jpeg'),
                       ),
+                    Text(questions.description, style: body2Style(color: onSurface[900])),
 
 //사진 넣기
                     Column(
 
                       children: [
-                        Text(
-                          ' 캐시비 교통카드인데 충전이 안돼요 ',
-                         style: body2Style(color: onSurface.withOpacity(0.6)),
-                        ),
+
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
                               ' 답변 ',
-                              style: body2Style(color: onSurface.withOpacity(0.6)),
+                              style: body3Style(color: primary[900]),
                             ),
                             SizedBox(width: 250.0,),
                             Icon(Icons.message),
-                            Icon(Icons.call),
+                            SizedBox(width: 20.0,),
+                            Icon(Icons.add_ic_call_outlined),
 
                           ],
 
@@ -84,12 +100,15 @@ class BoardDetailPage extends StatelessWidget {
                         Row(
                         //  mainAxisAlignment: MainAxisAlignment.center,
                           children: [
+                            SizedBox(width:10.0 ,),
                             Text(
-                              ' 저기 1회용 카드라서 환급대에 가서 \n 500원을 받으세요',
-                             style: body2Style(color: onSurface.withOpacity(0.6)),
+                              ' 저기 1회용 카드라서 환급대에 가서 500원을 \n 받으세요',
+                             style: body3Style(color: onSurface[900]),
                             ),
-
-
+                            SizedBox(width:40.0 ,),
+                            Icon(Icons.thumb_up_sharp,color: secondary[500],),
+                            SizedBox(width: 10.0,),
+                            Icon(Icons.thumb_down_sharp,color: secondary[500]),
 
                           ],
 
@@ -112,9 +131,12 @@ class BoardDetailPage extends StatelessWidget {
                        Row(
                           //  mainAxisAlignment: MainAxisAlignment.center,
                           children: [
+                            SizedBox(width:15.0 ,),
+                            Icon(Icons.arrow_forward,color: onSurface[500]),
+                            SizedBox(width:5.0 ,),
                             Text(
-                              ' 저기 1회용 카드라서 환급대에 가서 \n 500원을 받으세요',
-                              style: body2Style(color: onSurface.withOpacity(0.6)),
+                              ' 엥 저게 1회용 카드에요 ?',
+                              style: body3Style(color: onSurface[900]),
                             ),
 
 
