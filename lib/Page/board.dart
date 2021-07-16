@@ -56,6 +56,8 @@ class _QuestionBoardPageState extends State<QuestionBoardPage> {
 
                    ),
 
+
+
            ),
                  title: Text(question[index].title,style: body2Style(),),
                  subtitle: Text(question[index].description,style:body3Style()),
