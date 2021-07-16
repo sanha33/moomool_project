@@ -60,7 +60,9 @@ class BoardDetailPage extends StatelessWidget {
                     new Container(
                       width: 400,
                       height: 120,
-                      child:Image.asset('asset/cat.jpeg'),
+                      child: Image(image: NetworkImage("https://ifh.cc/g/2Bez3i.jpg"),
+                        
+                      ),
                       ),
                     Text(questions.description, style: body2Style(color: onSurface[900])),
 
